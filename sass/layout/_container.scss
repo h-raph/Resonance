@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+
+.ly-container {
+    width: 100%;
+    max-width: calc(1200px + 2 * $space-24px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $space-24px;
+    padding-right: $space-24px;
+}

@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+
+.ly-section {
+    padding-top: 80px;
+
+    &--compact {
+        padding-top: $space-64px;
+    }
+
+    &--last {
+        padding-bottom: 80px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $space-8px $space-24px;
+        margin-bottom: $space-24px;
+    }
+
+    &__title {
+        margin-bottom: $space-24px;
+    }
+
+    &__head &__title {
+        margin-bottom: 0;
+    }
+
+    &__title--day {
+        padding-bottom: $space-8px;
+        border-bottom: 1px solid $color-border;
+        font-size: $size-sub-title;
+        line-height: $lh-sub-title;
+    }
+
+    &__link {
+        font-weight: $weight-title-section;
+        color: $color-main;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

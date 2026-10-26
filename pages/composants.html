@@ -14,18 +14,29 @@
 <body>
 
     <header class="header">
-        <div class="ly-container">
-            <p class="ly-content header__breadcrumb">Accueil / Bibliothèque de composants</p>
-            <h1 class="header__title">Bibliothèque de composants</h1>
-            <p class="header__lead">Tous les composants du site, avec leurs variantes et leurs états.</p>
+        <div class="ly-container header__inner">
+            <a class="header__logo" href="index.html">
+                <span class="header__mark"></span>
+                <div>
+                    <p class="header__name">RÉSONANCES</p>
+                    <p class="header__tagline">Festival · 9 au 11 juillet 2027</p>
+                </div>
+            </a>
+            <nav class="header__nav" aria-label="Navigation principale">
+                <a class="header__link" href="/index.html">Accueil</a>
+                <a class="header__link" href="./programme.html">Programme</a>
+                <a class="header__link" href="./billetterie.html">Billetterie</a>
+                <a class="header__link" href="./infos.html">Infos pratiques</a>
+                <a class="header__link is-active" href="./composants.html" aria-current="page">Composants</a>
+            </nav>
+            <div class="header__actions">
+                <button class="button button--outline" type="button" data-theme-toggle>Mode sombre</button>
+                <a class="button button--primary" href="billetterie.html">Réserver</a>
+            </div>
         </div>
     </header>
 
-    <div class="ly-container">
-        <nav class="nav" aria-label="Sommaire">
-            <a class="nav__link" href="#jetons">Jetons</a>
-        </nav>
-
+    <main class="ly-container">
         <section class="section" id="jetons" aria-labelledby="jetons-titre">
             <h2 class="secion__title" id="jetons-titre">Jetons</h2>
             <p class="section__text">Couleurs, typographie et espacements utilisés par tous les composants.</p>
@@ -198,7 +209,34 @@
                         class="ly-docs__badge--compte-text">Mon programme</span></div>
             </div>
         </section>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="ly-container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <p class="footer__brand">RÉSONANCES</p>
+                    <p>Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d’artistes.</p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Le festival</p>
+                    <a class="footer__link" href="programme.html">Programme</a>
+                    <a class="footer__link" href="billetterie.html">Billetterie</a>
+                    <a class="footer__link" href="infos.html">Infos pratiques</a>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Contact</p>
+                    <a class="footer__link" href="mailto:contact@resonances-festival.fr">contact@resonances-festival.fr</a>
+                    <p>04 00 00 00 00</p>
+                </div>
+                <div class="footer__column">
+                    <label class="footer__title" for="newsletter-email">Newsletter</label>
+                    <input class="footer__input" id="newsletter-email" type="email" placeholder="Votre e-mail">
+                </div>
+            </div>
+            <p class="footer__bottom">© 2027 Association Résonances · Mentions légales · Accessibilité · Crédits photos</p>
+        </div>
+    </footer>
 </body>
 
 </html>
