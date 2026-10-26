@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+
+.l-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: $space-16px $space-24px;
+    padding-top: $space-8px;
+
+    &__label {
+        margin-bottom: $space-8px;
+        font-size: 13px;
+        font-weight: $weight-title-section;
+        line-height: 1.23;
+        color: $color-text-secondary;
+    }
+
+    &__count {
+        margin-bottom: $space-8px;
+        font-size: $size-little-text;
+        line-height: $lh-little-text;
+        color: $color-text-secondary;
+    }
+}

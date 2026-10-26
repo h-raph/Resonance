@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.scene-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 220px;
+    gap: $space-8px;
+    padding: $space-24px;
+    border-radius: $radius-12px;
+    color: $color-bg;
+    background-color: var(--scene-color, $color-main-text);
+
+    &__title {
+        font-size: 28px;
+        font-weight: $weight-title-section;
+        line-height: 1.28;
+        color: inherit;
+    }
+
+    &__link {
+        margin-top: $space-16px;
+        font-size: $size-little-text;
+        font-weight: $weight-title-section;
+        line-height: $lh-title-main;
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

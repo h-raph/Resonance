@@ -1,0 +1,66 @@
+// Rôle : pied de page du site (présentation, liens, contact, newsletter)
+@use '../abstracts/variables' as *;
+
+.footer {
+    padding-top: $space-40px;
+    padding-bottom: $space-24px;
+    font-size: $size-little-text;
+    line-height: $lh-little-text;
+    color: $color-border-form;
+    background-color: $color-main-text;
+
+    &__grid {
+        display: grid;
+        gap: $space-40px;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: $space-16px;
+    }
+
+    &__brand {
+        font-size: $size-text-intro;
+        font-weight: $weight-text-intro;
+        line-height: $lh-title-main;
+        color: $color-bg;
+    }
+
+    &__title {
+        font-weight: $weight-text-intro;
+        color: $color-bg;
+    }
+
+    &__link {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__input {
+        min-height: 44px;
+        padding: 0 $space-16px;
+        border: 1px solid $color-text-secondary;
+        border-radius: $radius-12px;
+        color: $color-bg;
+        background-color: $color-main-text;
+
+        &::placeholder {
+            color: $color-text-secondary;
+        }
+    }
+
+    &__bottom {
+        margin-top: $space-40px;
+        padding-top: $space-24px;
+        border-top: 1px solid $color-text-primary;
+        font-size: 12px;
+        line-height: 1.25;
+        color: $color-text-secondary;
+    }
+}

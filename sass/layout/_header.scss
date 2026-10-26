@@ -1,0 +1,79 @@
+@use '../abstracts/variables' as *;
+
+.header {
+    border-bottom: 1px solid $color-border;
+    background-color: $color-bg;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: $space-16px $space-40px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: $space-16px;
+        text-decoration: none;
+    }
+
+    &__mark {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        border-radius: $radius-999px;
+        background-color: $color-main;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            border: 3px solid $color-bg;
+            border-radius: $radius-999px;
+        }
+    }
+
+    &__name {
+        font-size: $size-text-intro;
+        font-weight: $weight-title-section;
+        line-height: 1.25;
+        color: $color-main-text;
+    }
+
+    &__tagline {
+        font-size: 12px;
+        line-height: 1.25;
+        color: $color-text-secondary;
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-8px $space-40px;
+    }
+
+    &__link {
+        color: $color-text-secondary;
+        text-decoration: none;
+
+        &:hover,
+        &.is-active {
+            color: $color-main-text;
+        }
+
+        &.is-active {
+            font-weight: $weight-title-section;
+            border-bottom: 3px solid $color-main;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        gap: $space-16px;
+    }
+}

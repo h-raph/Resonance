@@ -1,36 +1,5 @@
 @use '../abstracts/variables' as *;
 
-// ================ HEADER ================
-.header__breadcrumb {
-    color: $color-text-secondary;
-    font-size: $size-little-text;
-    font-weight: $weight-little-text;
-    line-height: $lh-little-text;
-}
-
-.header__title {
-    color: $color-main-text;
-    font-size: $size-title-main;
-    font-weight: $weight-title-main;
-    line-height: $lh-title-main;
-    margin: $space-16px auto;
-}
-
-.header__lead {
-    color: $color-text-primary;
-    font-size: $size-sub-title;
-    font-weight: $weight-sub-title;
-    line-height: $lh-sub-title;
-    margin: $space-16px auto;
-}
-
-.nav {
-    &__link {
-        text-decoration: none;
-        color: $color-main;
-    }
-}
-
 .section {
     &__title {
         color: $color-text-primary;
