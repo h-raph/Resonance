@@ -59,12 +59,15 @@
 
 .theme-lake {
     --scene-color: #{$color-lac};
+    --scene-contrast: #{$color-bg};
 }
 
 .theme-forest {
     --scene-color: #{$color-foret};
+    --scene-contrast: #{$color-bg};
 }
 
 .theme-kiosk {
     --scene-color: #{$color-kiosque};
+    --scene-contrast: #{$color-main-text};
 }

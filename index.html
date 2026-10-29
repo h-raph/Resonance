@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Festival Résonances</title>
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -29,7 +29,7 @@
             </nav>
             <div class="header__actions">
                 <button class="button button--outline" type="button" data-theme-toggle>Mode sombre</button>
-                <a class="button button--primary" href="billetterie.html">Réserver</a>
+                <a class="button button--primary" href="./pages/billeterie.html">Réserver</a>
             </div>
         </div>
     </header>
@@ -40,17 +40,19 @@
             <div class="ly-container hero__content">
                 <p class="hero__eyebrow">9, 10 et 11 juillet 2027 · Lac des Aulnes</p>
                 <h1 class="hero__title">Trois jours, trois scènes, un lac.</h1>
-                <p class="hero__text">Pop et rock au bord de l’eau, musiques électroniques sous les arbres, jazz au kiosque : quarante artistes à découvrir.</p>
-            <div>
-                <button class="button base-btn__button--main">Réserver mon pass</button>
-                <button class="button color-btn__button--border">Voir le programme</button>
+                <p class="hero__text">Pop et rock au bord de l’eau, musiques électroniques sous les arbres, jazz au
+                    kiosque : quarante artistes à découvrir.</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="./pages/billeterie.html">Réserver mon pass</a>
+                    <a class="button button--ghost-light" href="./pages/programme.html">Voir le programme</a>
+                </div>
             </div>
         </section>
 
-        <section class="section" aria-labelledby="festival-titre">
+        <section class="ly-section" aria-labelledby="festival-titre">
             <div class="ly-container intro">
                 <div>
-                    <h2 id="festival-titre" class="section__title">Le festival</h2>
+                    <h2 id="festival-titre" class="ly-section__title">Le festival</h2>
                     <p class="intro__text">Depuis 2015, Résonances réunit chaque été les publics de toutes les musiques
                         sur
                         les rives du lac des Aulnes. Une programmation exigeante, des scènes à taille humaine et un site
@@ -73,62 +75,62 @@
             </div>
         </section>
 
-        <section class="section" aria-labelledby="affiche-titre">
+        <section class="ly-section" aria-labelledby="affiche-titre">
             <div class="ly-container">
-                <div class="section__head">
-                    <h2 class="section__title" id="affiche-titre">Têtes d’affiche</h2>
-                    <a class="section__link" href="programme.html">Tout le programme →</a>
+                <div class="ly-section__head">
+                    <h2 class="ly-section__title" id="affiche-titre">Têtes d’affiche</h2>
+                    <a class="ly-section__link" href="./pages/programme.html">Tout le programme →</a>
                 </div>
                 <div class="ly-grid">
-                    <div class="card card--headliner theme-lake">
+                    <div class="card card--headliner theme-lake col-4">
                         <img class="card__media" src="assets/img/lune-rousse.jpg" alt="Lune Rousse en concert">
                         <div class="card__body">
                             <span class="badge scene-badge__badge--lake">Scène du Lac</span>
                             <h3 class="card__title">Lune Rousse</h3>
                             <p class="card__meta">Pop · Ven. 9 · 22 h 30</p>
-                            <a class="card__link" href="artiste.html">Voir la fiche →</a>
+                            <a class="card__link" href="./pages/ficheArtiste.html">Voir la fiche →</a>
                         </div>
                     </div>
-                    <div class="card card--headliner theme-forest">
+                    <div class="card card--headliner theme-forest col-4">
                         <img class="card__media" src="assets/img/ostra.jpg" alt="Ostra en concert">
                         <div class="card__body">
                             <span class="badge scene-badge__badge--forest">Scène de la Forêt</span>
                             <h3 class="card__title">Ostra</h3>
                             <p class="card__meta">Électro · Sam. 10 · 23 h 45</p>
-                            <a class="card__link" href="artiste.html">Voir la fiche →</a>
+                            <a class="card__link" href="./pages/ficheArtiste.html">Voir la fiche →</a>
                         </div>
                     </div>
-                    <div class="card card--headliner theme-kiosk">
+                    <div class="card card--headliner theme-kiosk col-4">
                         <img class="card__media" src="assets/img/trio-sablier.jpg" alt="Trio Sablier en concert">
                         <div class="card__body">
                             <span class="badge scene-badge__badge--kiosque">Le Kiosque</span>
                             <h3 class="card__title">Trio Sablier</h3>
                             <p class="card__meta">Jazz · Dim. 11 · 19 h 00</p>
-                            <a class="card__link" href="artiste.html">Voir la fiche →</a>
+                            <a class="card__link" href="./pages/ficheArtiste.html">Voir la fiche →</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section--last" aria-labelledby="scenes-titre">
+        <section class="ly-section ly-section--last" aria-labelledby="scenes-titre">
             <div class="ly-container">
-                <h2 class="section__title" id="scenes-titre">Les scènes</h2>
+                <h2 class="ly-section__title" id="scenes-titre">Les scènes</h2>
                 <div class="ly-grid">
                     <div class="scene-banner theme-lake col-3">
                         <h3 class="scene-banner__title">Scène du Lac</h3>
                         <p class="scene-banner__genre">Pop et rock</p>
-                        <a class="scene-banner__link" href="programme.html">Découvrir la scène →</a>
+                        <a class="scene-banner__link" href="./pages/programme.html">Découvrir la scène →</a>
                     </div>
                     <div class="scene-banner theme-forest col-3">
                         <h3 class="scene-banner__title">Scène de la Forêt</h3>
                         <p class="scene-banner__genre">Musiques électroniques</p>
-                        <a class="scene-banner__link" href="programme.html">Découvrir la scène →</a>
+                        <a class="scene-banner__link" href="./pages/programme.html">Découvrir la scène →</a>
                     </div>
                     <div class="scene-banner theme-kiosk col-3">
                         <h3 class="scene-banner__title">Le Kiosque</h3>
                         <p class="scene-banner__genre">Jazz et acoustique</p>
-                        <a class="scene-banner__link" href="programme.html">Découvrir la scène →</a>
+                        <a class="scene-banner__link" href="./pages/programme.html">Découvrir la scène →</a>
                     </div>
                 </div>
             </div>
@@ -145,9 +147,9 @@
                 </div>
                 <div class="footer__column">
                     <p class="footer__title">Le festival</p>
-                    <a class="footer__link" href="programme.html">Programme</a>
-                    <a class="footer__link" href="billetterie.html">Billetterie</a>
-                    <a class="footer__link" href="infos.html">Infos pratiques</a>
+                    <a class="footer__link" href="./pages/programme.html">Programme</a>
+                    <a class="footer__link" href="./pages/billeterie.html">Billetterie</a>
+                    <a class="footer__link" href="./pages/infos.html">Infos pratiques</a>
                 </div>
                 <div class="footer__column">
                     <p class="footer__title">Contact</p>
@@ -164,6 +166,8 @@
                 photos</p>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+// Rôle : carte d'artiste — image, corps, variantes
+// La couleur de la scène vient de la classe de thème (theme-lake…)
+@use '../abstracts/variables' as *;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid $color-border;
+    border-radius: $radius-12px;
+    background-color: $color-bg;
+
+    &__media {
+        width: 100%;
+        height: 216px;
+        object-fit: cover;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+        gap: $space-8px;
+        padding: $space-20px;
+        border-top: 6px solid var(--scene-color, $color-border);
+    }
+
+    &__title {
+        margin-top: $space-8px;
+        font-size: $size-text-intro;
+        font-weight: $weight-title-section;
+        line-height: 1.25;
+        color: $color-main-text;
+    }
+
+    &__meta {
+        font-size: $size-little-text;
+        line-height: $lh-little-text;
+        color: $color-text-secondary;
+    }
+
+    &__link {
+        margin-top: $space-8px;
+        font-size: $size-little-text;
+        font-weight: $weight-title-section;
+        line-height: $lh-little-text;
+        color: $color-main;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &--headliner &__media {
+        height: 300px;
+    }
+
+    &--headliner &__title {
+        font-size: $size-sub-title;
+        text-transform: uppercase;
+    }
+}

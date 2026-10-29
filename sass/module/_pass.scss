@@ -1,0 +1,105 @@
+// Rôle : formule de pass de la billetterie (normale ou mise en avant)
+@use '../abstracts/variables' as *;
+
+.pass {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $space-16px;
+    padding: $space-32px;
+    border: 1px solid $color-border;
+    border-radius: $radius-12px;
+    background-color: $color-bg;
+
+    &__ribbon {
+        position: absolute;
+        top: -$space-16px;
+        left: $space-24px;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        padding: 0 $space-24px;
+        border-radius: $radius-999px;
+        font-size: $size-caption;
+        font-weight: $weight-title-section;
+        line-height: 1;
+        color: $color-main-text;
+        background-color: $color-accent;
+    }
+
+    &__title {
+        font-size: $size-text-intro;
+        font-weight: $weight-title-section;
+        line-height: 1.25;
+        color: $color-main-text;
+    }
+
+    &__price {
+        font-size: $size-title-section;
+        font-weight: $weight-title-section;
+        line-height: $lh-title-section;
+        color: $color-main;
+    }
+
+    &__text {
+        font-size: $size-little-text;
+        line-height: $lh-little-text;
+        color: $color-text-secondary;
+    }
+
+    &__features {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: $space-16px;
+        padding-top: $space-24px;
+        border-top: 1px solid $color-border;
+        list-style: none;
+    }
+
+    &__feature {
+        font-size: $size-label;
+        line-height: $lh-label;
+        color: $color-text-primary;
+
+        &::before {
+            content: '✓';
+            margin-right: $space-8px;
+            font-weight: $weight-title-section;
+            color: $color-success;
+        }
+    }
+
+    &__action {
+        margin-top: $space-16px;
+    }
+
+    &--featured {
+        border-color: $color-main-text;
+        background-color: $color-main-text;
+    }
+
+    &--featured &__title {
+        color: $color-bg;
+    }
+
+    &--featured &__price {
+        color: $color-accent;
+    }
+
+    &--featured &__text {
+        color: $color-border-form;
+    }
+
+    &--featured &__features {
+        border-top-color: $color-text-primary;
+    }
+
+    &--featured &__feature {
+        color: $color-bg;
+
+        &::before {
+            color: $color-accent;
+        }
+    }
+}

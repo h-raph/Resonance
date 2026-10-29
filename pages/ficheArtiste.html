@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostra · Festival Résonances</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="ly-container header__inner">
+            <a class="header__logo" href="../index.html">
+                <span class="header__mark"></span>
+                <div>
+                    <p class="header__name">RÉSONANCES</p>
+                    <p class="header__tagline">Festival · 9 au 11 juillet 2027</p>
+                </div>
+            </a>
+            <nav class="header__nav" aria-label="Navigation principale">
+                <a class="header__link" href="../index.html">Accueil</a>
+                <a class="header__link is-active" href="programme.html" aria-current="page">Programme</a>
+                <a class="header__link" href="billeterie.html">Billetterie</a>
+                <a class="header__link" href="infos.html">Infos pratiques</a>
+                <a class="header__link" href="composants.html">Composants</a>
+            </nav>
+            <div class="header__actions">
+                <button class="button button--outline" type="button" data-theme-toggle>Mode sombre</button>
+                <a class="button button--primary" href="billeterie.html">Réserver</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="theme-forest">
+        <header class="artist-header">
+            <div class="ly-container artist-header__inner">
+                <p class="artist-header__breadcrumb">Accueil / Programme / Ostra</p>
+                <span class="badge badge--inverse">Scène de la Forêt</span>
+                <h1 class="artist-header__title">Ostra</h1>
+                <p class="artist-header__meta">Électro · Samedi 10 juillet · 23 h 45</p>
+            </div>
+        </header>
+
+        <section class="ly-section ly-section--compact" aria-labelledby="bio-titre">
+            <div class="ly-container artist">
+                <img class="artist__media" src="../assets/img/artiste-fiche.jpg" alt="Ostra sur scène, derrière ses claviers">
+                <div>
+                    <h2 class="artist__heading" id="bio-titre">Biographie</h2>
+                    <p class="artist__text">Ostra est le projet du producteur lyonnais Élie Marchand. Nourri de techno berlinoise et de musiques de film, il construit des sets lents qui montent jusqu’à l’aube, entre nappes analogiques et rythmiques sèches.</p>
+                    <p class="artist__text">Son deuxième album, Lisières, est sorti au printemps. Il le joue pour la première fois en plein air, au cœur de la forêt.</p>
+                    <dl class="artist__infos">
+                        <div class="artist__row">
+                            <dt class="artist__label">Jour</dt>
+                            <dd class="artist__value">Samedi 10 juillet</dd>
+                        </div>
+                        <div class="artist__row">
+                            <dt class="artist__label">Heure</dt>
+                            <dd class="artist__value">23 h 45 – 01 h 00</dd>
+                        </div>
+                        <div class="artist__row">
+                            <dt class="artist__label">Scène</dt>
+                            <dd class="artist__value">Scène de la Forêt</dd>
+                        </div>
+                    </dl>
+                    <div class="artist__actions">
+                        <button class="button button--scene" type="button">Ajouter à mon programme</button>
+                        <a class="button button--outline" href="billeterie.html">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly-section ly-section--last" aria-labelledby="autres-titre">
+            <div class="ly-container">
+                <h2 class="ly-section__title ly-section__title--sub" id="autres-titre">Autres artistes de la Scène de la Forêt</h2>
+                <div class="ly-grid">
+                    <div class="card theme-forest col-4">
+                        <img class="card__media" src="../assets/img/vertige-808.jpg" alt="Vertige 808 en concert">
+                        <div class="card__body">
+                            <span class="badge scene-badge__badge--forest">Scène de la Forêt</span>
+                            <h3 class="card__title">Vertige 808</h3>
+                            <p class="card__meta">Techno · Ven. 9 · 23 h 30</p>
+                            <a class="card__link" href="ficheArtiste.html">Voir la fiche →</a>
+                        </div>
+                    </div>
+                    <div class="card theme-forest col-4">
+                        <img class="card__media" src="../assets/img/brume.jpg" alt="Brume en concert">
+                        <div class="card__body">
+                            <span class="badge scene-badge__badge--forest">Scène de la Forêt</span>
+                            <h3 class="card__title">Brume</h3>
+                            <p class="card__meta">House · Sam. 10 · 01 h 00</p>
+                            <a class="card__link" href="ficheArtiste.html">Voir la fiche →</a>
+                        </div>
+                    </div>
+                    <div class="card theme-forest col-4">
+                        <img class="card__media" src="../assets/img/sylve.jpg" alt="Sylve en concert">
+                        <div class="card__body">
+                            <span class="badge scene-badge__badge--forest">Scène de la Forêt</span>
+                            <h3 class="card__title">Sylve</h3>
+                            <p class="card__meta">Ambient · Dim. 11 · 20 h 00</p>
+                            <a class="card__link" href="ficheArtiste.html">Voir la fiche →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="ly-container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <p class="footer__brand">RÉSONANCES</p>
+                    <p>Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d’artistes.</p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Le festival</p>
+                    <a class="footer__link" href="programme.html">Programme</a>
+                    <a class="footer__link" href="billeterie.html">Billetterie</a>
+                    <a class="footer__link" href="infos.html">Infos pratiques</a>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Contact</p>
+                    <a class="footer__link" href="mailto:contact@resonances-festival.fr">contact@resonances-festival.fr</a>
+                    <p>04 00 00 00 00</p>
+                </div>
+                <div class="footer__column">
+                    <label class="footer__title" for="newsletter-email">Newsletter</label>
+                    <input class="footer__input" id="newsletter-email" type="email" placeholder="Votre e-mail">
+                </div>
+            </div>
+            <p class="footer__bottom">© 2027 Association Résonances · Mentions légales · Accessibilité · Crédits photos</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos pratiques · Festival Résonances</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="ly-container header__inner">
+            <a class="header__logo" href="../index.html">
+                <span class="header__mark"></span>
+                <div>
+                    <p class="header__name">RÉSONANCES</p>
+                    <p class="header__tagline">Festival · 9 au 11 juillet 2027</p>
+                </div>
+            </a>
+            <nav class="header__nav" aria-label="Navigation principale">
+                <a class="header__link" href="../index.html">Accueil</a>
+                <a class="header__link" href="programme.html">Programme</a>
+                <a class="header__link" href="billeterie.html">Billetterie</a>
+                <a class="header__link is-active" href="infos.html" aria-current="page">Infos pratiques</a>
+                <a class="header__link" href="composants.html">Composants</a>
+            </nav>
+            <div class="header__actions">
+                <button class="button button--outline" type="button" data-theme-toggle>Mode sombre</button>
+                <a class="button button--primary" href="billeterie.html">Réserver</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <header class="page-title">
+            <div class="ly-container">
+                <p class="page-title__breadcrumb">Accueil / Infos pratiques</p>
+                <h1 class="page-title__title">Infos pratiques</h1>
+                <p class="page-title__lead">Tout ce qu’il faut savoir pour préparer votre venue.</p>
+            </div>
+        </header>
+
+        <section class="ly-section ly-section--compact" aria-label="Informations pratiques">
+            <div class="ly-container">
+                <div class="ly-grid">
+                    <div class="info-block col-4">
+                        <span class="info-block__number">1</span>
+                        <h2 class="info-block__title">Accès</h2>
+                        <p class="info-block__text">En train : gare de Saint-Aulnes, puis navette gratuite toutes les 20 minutes.<br>
+                            En voiture : parking P1 à 800 m, 5 € la journée.<br>
+                            À vélo : parking sécurisé à l’entrée.</p>
+                    </div>
+                    <div class="info-block col-4">
+                        <span class="info-block__number">2</span>
+                        <h2 class="info-block__title">Horaires</h2>
+                        <p class="info-block__text">Vendredi 9 : 17 h – 2 h<br>
+                            Samedi 10 : 14 h – 3 h<br>
+                            Dimanche 11 : 14 h – 0 h<br>
+                            Ouverture des portes une heure avant le premier concert.</p>
+                    </div>
+                    <div class="info-block col-4">
+                        <span class="info-block__number">3</span>
+                        <h2 class="info-block__title">Sur place</h2>
+                        <p class="info-block__text">Restauration locale et végétarienne, paiement par carte uniquement.<br>
+                            Espace calme et poste de secours.<br>
+                            Site accessible aux personnes à mobilité réduite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly-section" aria-labelledby="faq-titre">
+            <div class="ly-container">
+                <h2 class="ly-section__title" id="faq-titre">Questions fréquentes</h2>
+                <div class="faq">
+                    <div class="faq__item is-open">
+                        <button class="faq__question" type="button" aria-expanded="true" data-faq-toggle>
+                            Puis-je revendre mon pass ?
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                        <p class="faq__answer">Oui, via la plateforme officielle de revente, jusqu’à 48 heures avant le festival. Le pass est alors réédité au nom du nouvel acheteur.</p>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" type="button" aria-expanded="false" data-faq-toggle>
+                            Les enfants sont-ils acceptés ?
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" type="button" aria-expanded="false" data-faq-toggle>
+                            Peut-on sortir et revenir dans la journée ?
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" type="button" aria-expanded="false" data-faq-toggle>
+                            Les animaux sont-ils admis ?
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" type="button" aria-expanded="false" data-faq-toggle>
+                            Que faire en cas de pluie ?
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly-section ly-section--last" aria-labelledby="contact-titre">
+            <div class="ly-container">
+                <div class="contact-band">
+                    <div>
+                        <h2 class="contact-band__title" id="contact-titre">Une autre question ?</h2>
+                        <p class="contact-band__text">L’équipe vous répond du lundi au vendredi, de 9 h à 18 h.</p>
+                    </div>
+                    <a class="button button--secondary contact-band__action" href="mailto:contact@resonances-festival.fr">Nous écrire</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="ly-container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <p class="footer__brand">RÉSONANCES</p>
+                    <p>Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d’artistes.</p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Le festival</p>
+                    <a class="footer__link" href="programme.html">Programme</a>
+                    <a class="footer__link" href="billeterie.html">Billetterie</a>
+                    <a class="footer__link" href="infos.html">Infos pratiques</a>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Contact</p>
+                    <a class="footer__link" href="mailto:contact@resonances-festival.fr">contact@resonances-festival.fr</a>
+                    <p>04 00 00 00 00</p>
+                </div>
+                <div class="footer__column">
+                    <label class="footer__title" for="newsletter-email">Newsletter</label>
+                    <input class="footer__input" id="newsletter-email" type="email" placeholder="Votre e-mail">
+                </div>
+            </div>
+            <p class="footer__bottom">© 2027 Association Résonances · Mentions légales · Accessibilité · Crédits photos</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

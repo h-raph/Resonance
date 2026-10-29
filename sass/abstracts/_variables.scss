@@ -13,6 +13,9 @@ $color-error: #b3261e;
 $color-lac: #1f4e8c;
 $color-foret: #2f6b3a;
 $color-kiosque: #b87a1e;
+$color-text-disabled: #9a9da8;
+$color-focus-ring: #f2b8ac;
+$color-success: #2f6b3a;
 
 // =========== ESPACEMENTS ===========
 $space-8px: 8px;
@@ -20,8 +23,13 @@ $space-16px: 16px;
 $space-24px: 24px;
 $space-40px: 40px;
 $space-64px: 64px;
+$space-20px: 20px;
+$space-32px: 32px;
+$space-48px: 48px;
+$space-80px: 80px;
 
 // =========== RAYONS ===========
+$radius-4px : 4px;
 $radius-6px : 6px;
 $radius-12px : 12px;
 $radius-999px : 999px;
@@ -55,6 +63,16 @@ $lh-text: 26px;
 $size-little-text: 14px;
 $weight-little-text: 400;
 $lh-little-text: 22px;
+
+$size-large: 18px;
+$size-title-xl: 24px;
+
+$size-label: 15px;
+$lh-label: 18px;
+$lh-info: 28px;
+
+$size-caption: 13px;
+$lh-caption: 16px;
 
 // =========== GRID ===========
 $grid-columns: 12;
