@@ -15,6 +15,9 @@
     --color-lac: #{$color-lac};
     --color-foret: #{$color-foret};
     --color-kiosque: #{$color-kiosque};
+    --color-text-disabled: #{$color-text-disabled};
+    --color-focus-ring: #{$color-focus-ring};
+    --color-success: #{$color-success};
 
     // Spacing
     --space-8px: #{$space-8px};
@@ -22,6 +25,10 @@
     --space-24px: #{$space-24px};
     --space-40px: #{$space-40px};
     --space-64px: #{$space-64px};
+    --space-20px: #{$space-20px};
+    --space-32px: #{$space-32px};
+    --space-48px: #{$space-48px};
+    --space-80px: #{$space-80px};
 
     // Typography
     --size-title-main: #{$size-title-main};
@@ -47,4 +54,14 @@
     --size-little-text: #{$size-little-text};
     --weight-little-text: #{$weight-little-text};
     --lh-little-text: #{$lh-little-text};
+
+    --size-large: #{$size-large};
+    --size-title-xl: #{$size-title-xl};
+
+    --size-label: #{$size-label};
+    --lh-label: #{$lh-label};
+    --lh-info: #{$lh-info};
+
+    --size-caption: #{$size-caption};
+    --lh-caption: #{$lh-caption};
 }

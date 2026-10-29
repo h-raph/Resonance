@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetterie · Festival Résonances</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="ly-container header__inner">
+            <a class="header__logo" href="../index.html">
+                <span class="header__mark"></span>
+                <div>
+                    <p class="header__name">RÉSONANCES</p>
+                    <p class="header__tagline">Festival · 9 au 11 juillet 2027</p>
+                </div>
+            </a>
+            <nav class="header__nav" aria-label="Navigation principale">
+                <a class="header__link" href="../index.html">Accueil</a>
+                <a class="header__link" href="programme.html">Programme</a>
+                <a class="header__link is-active" href="billeterie.html" aria-current="page">Billetterie</a>
+                <a class="header__link" href="infos.html">Infos pratiques</a>
+                <a class="header__link" href="composants.html">Composants</a>
+            </nav>
+            <div class="header__actions">
+                <button class="button button--outline" type="button" data-theme-toggle>Mode sombre</button>
+                <a class="button button--primary" href="billeterie.html">Réserver</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <header class="page-title">
+            <div class="ly-container">
+                <p class="page-title__breadcrumb">Accueil / Billetterie</p>
+                <h1 class="page-title__title">Billetterie</h1>
+                <p class="page-title__lead">Choisissez votre formule, puis réservez en quelques minutes.</p>
+            </div>
+        </header>
+
+        <section class="ly-section ly-section--compact" aria-label="Formules de pass">
+            <div class="ly-container">
+                <div class="ly-grid">
+                    <div class="pass col-4">
+                        <h2 class="pass__title">Pass 1 jour</h2>
+                        <p class="pass__price">49 €</p>
+                        <p class="pass__text">Accès à toutes les scènes le jour choisi</p>
+                        <ul class="pass__features">
+                            <li class="pass__feature">Accès aux trois scènes</li>
+                            <li class="pass__feature">Navette gratuite depuis la gare</li>
+                            <li class="pass__feature">Bracelet nominatif</li>
+                        </ul>
+                        <a class="button button--outline pass__action" href="#reservation">Choisir cette formule</a>
+                    </div>
+                    <div class="pass pass--featured col-4">
+                        <p class="pass__ribbon">Le plus choisi</p>
+                        <h2 class="pass__title">Pass 3 jours</h2>
+                        <p class="pass__price">119 €</p>
+                        <p class="pass__text">Le festival en entier, du vendredi au dimanche</p>
+                        <ul class="pass__features">
+                            <li class="pass__feature">Accès aux trois scènes</li>
+                            <li class="pass__feature">Navette gratuite depuis la gare</li>
+                            <li class="pass__feature">Accès prioritaire au Kiosque</li>
+                            <li class="pass__feature">Gobelet réutilisable offert</li>
+                        </ul>
+                        <a class="button button--primary pass__action" href="#reservation">Choisir cette formule</a>
+                    </div>
+                    <div class="pass col-4">
+                        <h2 class="pass__title">Pass 3 jours + camping</h2>
+                        <p class="pass__price">159 €</p>
+                        <p class="pass__text">Le festival et un emplacement au camping du lac</p>
+                        <ul class="pass__features">
+                            <li class="pass__feature">Tous les avantages du pass 3 jours</li>
+                            <li class="pass__feature">Emplacement de camping</li>
+                            <li class="pass__feature">Douches et consignes</li>
+                        </ul>
+                        <a class="button button--outline pass__action" href="#reservation">Choisir cette formule</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly-section ly-section--last" id="reservation" aria-labelledby="reservation-titre">
+            <div class="ly-container">
+                <form class="booking-form" action="#">
+                    <h2 class="booking-form__title" id="reservation-titre">Réserver</h2>
+                    <p class="booking-form__hint">Les champs marqués d’un astérisque sont obligatoires.</p>
+                    <div class="booking-form__grid">
+                        <div class="field">
+                            <label class="field__label" for="prenom">Prénom *</label>
+                            <input class="field__input" id="prenom" type="text" value="Camille" required>
+                        </div>
+                        <div class="field">
+                            <label class="field__label" for="nom">Nom *</label>
+                            <input class="field__input" id="nom" type="text" value="Durand" required>
+                        </div>
+                        <div class="field">
+                            <label class="field__label" for="email">E-mail *</label>
+                            <input class="field__input is-error" id="email" type="email" value="camille.durand@" aria-invalid="true" aria-describedby="email-erreur" required>
+                            <p class="field__message field__message--error" id="email-erreur">Adresse e-mail invalide.</p>
+                        </div>
+                        <div class="field">
+                            <label class="field__label" for="telephone">Téléphone</label>
+                            <input class="field__input" id="telephone" type="tel" value="06 12 34 56 78">
+                        </div>
+                        <div class="field">
+                            <label class="field__label" for="formule">Formule *</label>
+                            <select class="field__select is-focused" id="formule" required>
+                                <option>Pass 1 jour</option>
+                                <option selected>Pass 3 jours</option>
+                                <option>Pass 3 jours + camping</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="field__label" for="nombre">Nombre de pass *</label>
+                            <select class="field__select" id="nombre" required>
+                                <option>1</option>
+                                <option selected>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="booking-form__terms">
+                        <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked required>
+                            <span class="checkbox__label">J’accepte les conditions générales de vente *</span>
+                        </label>
+                    </div>
+                    <div class="booking-form__footer">
+                        <p class="booking-form__total">Total : 238 €</p>
+                        <button class="button button--primary" type="submit">Valider la réservation</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="ly-container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <p class="footer__brand">RÉSONANCES</p>
+                    <p>Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d’artistes.</p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Le festival</p>
+                    <a class="footer__link" href="programme.html">Programme</a>
+                    <a class="footer__link" href="billeterie.html">Billetterie</a>
+                    <a class="footer__link" href="infos.html">Infos pratiques</a>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Contact</p>
+                    <a class="footer__link" href="mailto:contact@resonances-festival.fr">contact@resonances-festival.fr</a>
+                    <p>04 00 00 00 00</p>
+                </div>
+                <div class="footer__column">
+                    <label class="footer__title" for="newsletter-email">Newsletter</label>
+                    <input class="footer__input" id="newsletter-email" type="email" placeholder="Votre e-mail">
+                </div>
+            </div>
+            <p class="footer__bottom">© 2027 Association Résonances · Mentions légales · Accessibilité · Crédits photos</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

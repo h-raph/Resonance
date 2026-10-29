@@ -8,7 +8,7 @@
     gap: $space-8px;
     padding: $space-24px;
     border-radius: $radius-12px;
-    color: $color-bg;
+    color: var(--scene-contrast, $color-bg);
     background-color: var(--scene-color, $color-main-text);
 
     &__title {

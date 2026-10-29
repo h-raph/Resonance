@@ -1,0 +1,11 @@
+// Rôle : variante de badge posée sur un fond de scène
+@use '../abstracts/variables' as *;
+
+.badge {
+    &--inverse {
+        font-size: $size-little-text;
+        font-weight: $weight-title-section;
+        color: var(--scene-color, $color-main-text);
+        background-color: $color-bg;
+    }
+}

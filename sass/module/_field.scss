@@ -1,0 +1,55 @@
+// Rôle : champ de formulaire (libellé, saisie ou liste, message) et ses états
+@use '../abstracts/variables' as *;
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: $space-8px;
+    min-width: 200px;
+
+    &__label {
+        font-size: $size-little-text;
+        font-weight: $weight-title-section;
+        line-height: $lh-little-text;
+        color: $color-main-text;
+    }
+
+    &__input,
+    &__select {
+        min-height: 48px;
+        padding: 0 $space-16px;
+        border: 1px solid $color-border-form;
+        border-radius: $radius-6px;
+        font: inherit;
+        color: $color-main-text;
+        background-color: $color-bg;
+
+        &:focus,
+        &.is-focused {
+            outline: none;
+            border-color: $color-main;
+            box-shadow: 0 0 0 1px $color-main, 0 0 0 4px $color-focus-ring;
+        }
+
+        &.is-error {
+            border-color: $color-error;
+            box-shadow: 0 0 0 1px $color-error;
+        }
+
+        &:disabled {
+            color: $color-text-disabled;
+            background-color: $color-alt-bg;
+            cursor: not-allowed;
+        }
+    }
+
+    &__message {
+        font-size: $size-caption;
+        line-height: $lh-caption;
+        color: $color-text-secondary;
+
+        &--error {
+            color: $color-error;
+        }
+    }
+}

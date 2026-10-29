@@ -2,7 +2,7 @@
 
 .ly-grid {
         margin: $space-40px auto;
-        width: 100vw;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat($grid-columns, 1fr);
         gap: $space-24px;

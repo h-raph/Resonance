@@ -1,0 +1,64 @@
+// Rôle : questions fréquentes en accordéon (chaque question s'ouvre seule)
+@use '../abstracts/variables' as *;
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16px;
+    width: 100%;
+
+    &__item {
+        border: 1px solid $color-border;
+        border-radius: $radius-12px;
+        background-color: $color-bg;
+
+        &.is-open {
+            border-color: $color-main-text;
+            box-shadow: 0 0 0 1px $color-main-text;
+        }
+    }
+
+    &__question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $space-16px;
+        width: 100%;
+        padding: $space-24px $space-32px;
+        border: 0;
+        font-family: inherit;
+        font-size: $size-large;
+        font-weight: $weight-title-section;
+        line-height: 1.25;
+        text-align: left;
+        color: $color-main-text;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid $color-main-text;
+        border-bottom: 2px solid $color-main-text;
+        transform: rotate(45deg);
+    }
+
+    &__answer {
+        display: none;
+        max-width: calc(780px + 2 * $space-32px);
+        padding: 0 $space-32px $space-24px;
+        font-size: $size-text;
+        line-height: $lh-text;
+        color: $color-text-primary;
+    }
+
+    &__item.is-open &__icon {
+        transform: rotate(-135deg);
+    }
+
+    &__item.is-open &__answer {
+        display: block;
+    }
+}

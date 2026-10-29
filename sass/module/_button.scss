@@ -1,0 +1,70 @@
+// Rôle : variantes de bouton utilisées dans les pages (la base .button est dans layout/_composant)
+@use '../abstracts/variables' as *;
+
+.button {
+    &--primary,
+    &--secondary,
+    &--outline,
+    &--ghost-light,
+    &--scene {
+        display: inline-block;
+        border: 2px solid transparent;
+        font-weight: $weight-title-section;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px $color-focus-ring;
+        }
+    }
+
+    &--primary {
+        color: $color-bg;
+        background-color: $color-main;
+
+        &:hover {
+            background-color: $color-main-hover;
+        }
+    }
+
+    &--secondary {
+        color: $color-bg;
+        background-color: $color-main-text;
+
+        &:hover {
+            background-color: $color-text-primary;
+        }
+    }
+
+    &--outline {
+        border-color: $color-main-text;
+        color: $color-main-text;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $color-alt-bg;
+        }
+    }
+
+    &--ghost-light {
+        border-color: $color-bg;
+        color: $color-bg;
+        background-color: transparent;
+
+        &:hover {
+            color: $color-main-text;
+            background-color: $color-bg;
+        }
+    }
+
+    &--scene {
+        color: var(--scene-contrast, $color-bg);
+        background-color: var(--scene-color, $color-main);
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
